@@ -13,8 +13,8 @@ sudo nmcli device wifi hotspot con-name t-450 ssid t-450 band bg password <passw
  iptables -t nat -I POSTROUTING -j MASQUERADE
 ```
 
-- Step 3: Start the PoC script (below) on attacker machine which is now acting as a router for attacker phone
+- Step 3: Clone repository and run the script on the machine which is now acting as a router for calling phone
 - Step 4: Call any whatsapp user randomly to capture the server IP addresses to filter
-- Step 5: Call victim on his whatsapp
+- Step 5: Call target on his whatsapp
 - Step 6: Disconnect the call once established
-- Step 7: Script will reveal the public IP address of the target
+- Step 7: Script will reveal the IP address of the target
