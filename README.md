@@ -2,9 +2,9 @@ This program is for Educational purpose ONLY. Do not use it without permission. 
 
 Note: updated hotspot using nmcli instead of the outdated hotspotd
 
-- Step 1: Run hotspotd with these steps:
+- Step 1: Run hotspot with these steps:
 ```
-sudo nmcli device wifi hotspot con-name t-450 ssid t-450 band bg password <password_here>
+sudo nmcli device wifi hotspot con-name <name_here> ssid <ssid_here> band bg password <password_here>
 ```
 
 - Step 2: Run the following commands:
