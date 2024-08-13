@@ -2,12 +2,12 @@ This program is for Educational purpose ONLY. Do not use it without permission. 
 
 Note: updated hotspot using nmcli instead of the outdated hotspotd
 
-- Step 1: Run hotspot with these steps:
+- Step 1: Run hotspot with these steps as sudo:
 ```
-sudo nmcli device wifi hotspot con-name <name_here> ssid <ssid_here> band bg password <password_here>
+nmcli device wifi hotspot con-name <name_here> ssid <ssid_here> band bg password <password_here>
 ```
 
-- Step 2: Run the following commands:
+- Step 2: Run the following commands as sudo:
 ```
  echo 1 > /proc/sys/net/ipv4/ip_forward
  iptables -t nat -I POSTROUTING -j MASQUERADE
